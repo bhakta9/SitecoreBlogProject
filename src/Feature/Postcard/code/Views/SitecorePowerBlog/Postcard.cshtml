@@ -1,0 +1,26 @@
+﻿@using System.Web.Mvc;
+@model IEnumerable<BlogProject.Feature.Postcard.Models.BlogArticle>
+@{
+    var setting = Sitecore.Context.Database.GetItem("{DC4E261D-80E5-4CED-8813-3C91DCD3A43D}");
+}
+<main class="container blog-posts">
+    @if (Model.Any())
+    {
+        <div class="row">
+            @foreach (var card in Model)
+            {
+                <div class="blog-post-card card col-lg-4 col-md-6">
+                    @Html.Raw(card.ShortImage)
+                    <div class="card-body bg-light">
+                        <strong class="d-inline-block mb-2 text-success">@Html.Raw(card.Category)</strong>
+                        <h3 class="card-title">@Html.Raw(card.Title)</h3>
+                        <div class="mb-1 text-muted">@Html.Raw(card.PostedDate)</div>
+                        <p>@Html.Raw(card.ShortDescription)</p>
+                        <a href="https://xp101sc.dev.local/sitecore/content/Home/SitecorePowerBlog/blog details?blogId=@Html.Raw(card.Id)" class="btn btn-warning btn-block">@Html.Sitecore().Field("PostCard Button Text", setting)</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</main>
+

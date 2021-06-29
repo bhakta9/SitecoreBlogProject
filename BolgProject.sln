@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{18573ABB-9B67-48BE-A22D-44599E7F568B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{C8B50EC9-47A9-4FA9-B36B-2757669D0640}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{1D51570C-FDED-4708-8087-946DF5C43FDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{38FBEE6D-9F4F-4B2D-8A49-0F9DC8CCD6F6}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postcard", "Postcard", "{786C338A-56A9-4E9A-86FB-E6534FBC6E38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.Feature.Postcard", "src\Feature\Postcard\code\BlogProject.Feature.Postcard.csproj", "{0C98A1A5-C56C-450E-91DB-721430E7B28F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{7143A7B4-7D2A-407B-9E61-34A0C82C3A37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.Feature.Search", "src\Feature\Search\code\BlogProject.Feature.Search.csproj", "{B6B179CB-0930-4B9B-BB68-D2DA4D2F0642}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C98A1A5-C56C-450E-91DB-721430E7B28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C98A1A5-C56C-450E-91DB-721430E7B28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C98A1A5-C56C-450E-91DB-721430E7B28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C98A1A5-C56C-450E-91DB-721430E7B28F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B179CB-0930-4B9B-BB68-D2DA4D2F0642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B179CB-0930-4B9B-BB68-D2DA4D2F0642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B179CB-0930-4B9B-BB68-D2DA4D2F0642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B179CB-0930-4B9B-BB68-D2DA4D2F0642}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{786C338A-56A9-4E9A-86FB-E6534FBC6E38} = {18573ABB-9B67-48BE-A22D-44599E7F568B}
+		{0C98A1A5-C56C-450E-91DB-721430E7B28F} = {786C338A-56A9-4E9A-86FB-E6534FBC6E38}
+		{7143A7B4-7D2A-407B-9E61-34A0C82C3A37} = {18573ABB-9B67-48BE-A22D-44599E7F568B}
+		{B6B179CB-0930-4B9B-BB68-D2DA4D2F0642} = {7143A7B4-7D2A-407B-9E61-34A0C82C3A37}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {418935B3-C225-4315-928F-EA30BBF29635}
+	EndGlobalSection
+EndGlobal
